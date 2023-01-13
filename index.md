@@ -1,14 +1,11 @@
 ---
-title: Home
+title: 
 ---
 
 # Home
 
 ## Introduction
-
-**Bold Text**
-_Italic Text_
-**_Bold and Italic Text_**
+Welcome to my personal page. This space will grow with me.
 
 ## Research Question
 
