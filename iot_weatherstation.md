@@ -5,7 +5,7 @@ title: IoT Weather Station
 
 For my embedded systems class this semester, my team and I designed, built, and programmed an IoT Weather Station from the ground up.
 
-![IoT Weather Station fully assembled, with the lid open.](/LeviTranstrum.github.io/images/Final_Product.jpg)
+![IoT Weather Station fully assembled, with the lid open.](images/Final_Product.jpg)
 
 Course requirements dictated that the project feature the following:
 
@@ -17,6 +17,7 @@ Course requirements dictated that the project feature the following:
 * A user input interface with program interrupts
 
 To meet the requirements, my team selected the following hardware:
+
 * [Microchip PIC18LF27K40 Microcontroller](https://www.microchip.com/en-us/product/PIC18F27K40)
 * [Texas Instruments HDC2021DEBR Humidity Sensor](https://www.digikey.com/en/products/detail/texas-instruments/HDC2021DEBR/12762163)
 * [Texas Instruments TMP1075 Temperature Sensor](https://www.ti.com/product/TMP1075)
@@ -28,15 +29,21 @@ To meet the requirements, my team selected the following hardware:
 
 After selecting components, we went on to create the electrical schematic and PCB design using [Cadence](https://www.cadence.com/en_US/home/tools/pcb-design-and-analysis.html). The license to use this heavyweight industrial software was provided by Arizona State University.
 
-<p style="text-align: center;">Electrical Schematic in Cadence OrCAD Capture CIS</p>
+<p style="text-align: center;">
+Electrical Schematic in Cadence OrCAD Capture CIS
+</p>
 
 ![Electrical Schematic in Cadence OrCAD Capture CIS](images/TEAM304FINALSCHEMATIC.jpg "Electrical Schematic in OrCAD Capture CIS")
 
-<p style="text-align: center;">Top Layer PCB Design in Cadence Allegro PCB Editor</p>
+<p style="text-align: center;">
+Top Layer PCB Design in Cadence Allegro PCB Editor
+</p>
 
 ![Top Layer PCB Design in Cadence Allegro PCB Editor](images/Top_PCB_Design.png "Top Layer PCB Design in Cadence Allegro PCB Editor")
 
-<p style="text-align: center;">Bottom Layer PCB Design in Cadence Allegro PCB Editor</p>
+<p style="text-align: center;">
+Bottom Layer PCB Design in Cadence Allegro PCB Editor
+</p>
 
 ![Bottom Layer PCB Design in Cadence Allegro PCB Editor](images/Bottom_PCB_Design.png "Bottom Layer PCB Design in Cadence Allegro PCB Editor")
 
@@ -259,9 +266,17 @@ def plot_data(msg):
 
 The OLED graphics were handled by the ssd1306 library. The result was pretty cool to see: a dynamically changing readout of the most recent temperature and humidity readings. The readings were also published to MQTT and could be viewed from anywhere in the world (with a Wi-Fi connection).
 
+<p style="text-align: center;">
+MQTT server messages
+</p>
+
 ![MQTT Server](images/MQTT_Explorer.png "MQTT Server")
 
 With the programs written and deployed to their respective chips, we had a fully functional board to present at the ASU Innovation Showcase! My wife brought our newborn son to take part in the celebration. He's the smaller gentleman on the right.
+
+<p style="text-align: center;">
+ASU Innovation Showcase
+</p>
 
 ![Showing off our project at the Innovation Showcase.](images/Innovation_showcase.jpg "Showing off our project at the Innovation Showcase.")
 
