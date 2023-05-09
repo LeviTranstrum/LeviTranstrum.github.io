@@ -1,35 +1,16 @@
 ---
-title: 
+title:
 ---
 
-# Home
+# Levi Transtrum
 
-## Introduction
-Welcome to my personal page. This space will grow with me.
+## Projects
 
-## Research Question
+| [![](images/Final_Product_thumbnail.jpg)](iot_weatherstation.md) | [![](images/test_rig_CAD_thumbnail.jpg)](force_test_rig.md) | [![](images/TSP_graph_thumbnail.png)](TSP.md) |
+|---|---|---|
+| [![](images/plc_thumbnail.jpg)](plc_workstation.md) |   |   |
 
-* Bullet Point 1
-* Bullet Point 2
-* Bullet Point 3
+## Passions
 
-## Background
-
-![image caption](https://idealab.asu.edu/assets/images/research/jumper1.png)
-
-[link to background](/background)
-
-## Results
-
-1. Numbered Point 1
-1. Numbered Point 2
-1. Numbered Point 3
-
-## Conclusions and Future Work
-
-## External Links
-
-[example link to idealab](https://idealab.asu.edu)
-
-
-## References
+| [![](images/cello.png)](cello.md) | [![](images/chess.png)](chess.md) | [![](images/baby_thumbnail.png)](fatherhood.md) |
+|---|--|--|
