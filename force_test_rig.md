@@ -1,3 +1,7 @@
+---
+title: Force Test Rig
+---
+
 # Force Test Rig
 
 {% include youtube.html id="rs_C8sR2_co" %}
