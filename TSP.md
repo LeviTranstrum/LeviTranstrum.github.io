@@ -1,3 +1,3 @@
-#Traveling Salesman Problem Optimizer
+# Traveling Salesman Problem Optimizer
 
-![Optimized TSP Route](images/TSP_graph.png)
+![Optimized TSP Route](LeviTranstrum.github.io/images/TSP_graph.png)

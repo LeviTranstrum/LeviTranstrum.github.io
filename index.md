@@ -1,16 +1,15 @@
 ---
-title:
+title: Levi's Portfolio
 ---
-
-# Levi Transtrum
 
 ## Projects
 
-| [![](images/Final_Product_thumbnail.jpg)](iot_weatherstation.md) | [![](images/test_rig_CAD_thumbnail.jpg)](force_test_rig.md) | [![](images/TSP_graph_thumbnail.png)](TSP.md) |
+| [![IoT Weather Station](images/Final_Product_thumbnail.jpg)](levitranstrum.github.io/iot_weatherstation) | [![Force Test Rig](images/test_rig_CAD_thumbnail.jpg)](force_test_rig.md) | [![TSP Optimizer](images/TSP_graph_thumbnail.png)](TSP.md) |
 |---|---|---|
-| [![](images/plc_thumbnail.jpg)](plc_workstation.md) |   |   |
+| [![PLC Workstation](images/plc_thumbnail.jpg)](plc_workstation.md) |   |   |
 
 ## Passions
 
-| [![](images/cello.png)](cello.md) | [![](images/chess.png)](chess.md) | [![](images/baby_thumbnail.png)](fatherhood.md) |
-|---|--|--|
+| [![Cello](images/cello.png)](cello.md) | [![Chess](images/chess.png)](chess.md) | [![Fatherhood](images/baby_thumbnail.png)](fatherhood.md) |
+|---|---|---|
+|   |   |   |

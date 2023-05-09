@@ -1,7 +1,6 @@
 ---
 title: IoT Weather Station
 ---
-# IoT Weather Station
 
 For my embedded systems class this semester, my team and I designed, built, and programmed an IoT Weather Station from the ground up.
 
