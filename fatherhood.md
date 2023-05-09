@@ -15,8 +15,8 @@ Or being hated, don’t give way to hating, <br>
 And yet don’t look too good, nor talk too wise: <br>
 </p>
 <p style="text-align: center;">
-If you can dream—and not make dreams your master; <br>
-If you can think—and not make thoughts your aim; <br>
+If you can dream-and not make dreams your master; <br>
+If you can think-and not make thoughts your aim; <br>
 If you can meet with Triumph and Disaster <br>
 And treat those two impostors just the same; <br>
 If you can bear to hear the truth you’ve spoken <br>
@@ -36,13 +36,13 @@ Except the Will which says to them: ‘Hold on!’ <br>
 </p>
 <p style="text-align: center;">
 If you can talk with crowds and keep your virtue, <br>
-Or walk with Kings — nor lose the common touch, <br>
+Or walk with Kings - nor lose the common touch, <br>
 If neither foes nor loving friends can hurt you, <br>
 If all men count with you, but none too much; <br>
 If you can fill the unforgiving minute <br>
 With sixty seconds’ worth of distance run, <br>
 Yours is the Earth and everything that’s in it, <br>
-And — which is more — you’ll be a Man, my son! <br>
+And - which is more - you’ll be a Man, my son! <br>
 </p>
 <br>
 If - Rudyard Kipling
