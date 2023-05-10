@@ -6,12 +6,12 @@ Title: PLC Workstation
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xUBj3sQjYIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-This is a small PLC workstation set up at Arizona State University's Industrial Automation lab. It features SMC PLCs, an assortment of pneumatic actuators, and common industrial sensors such as reed switches and prox sensors. 
+This is a small PLC workstation set up at Arizona State University's Industrial Automation lab. It features SMC PLCs, an assortment of pneumatic actuators, and common industrial sensors such as reed switches and prox sensors.
 
 For the final project, I was given an open-ended description of functionality, with no PLC-specific instructions. I had to decide how to PLC program should be structured in order to accomplish the required functionality. The functionality required was described as follows:
 
 > The machine must have the following functionality:
-> 
+>
 > * A production mode that moves a box from the magazine to the end of the conveyor belt
 > * A reset function that returns the machine to a safe "home" position
 > * Motion must stop when the stop button is pressed, and resume when the start button is pressed

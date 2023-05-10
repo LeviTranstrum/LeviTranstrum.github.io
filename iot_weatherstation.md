@@ -83,7 +83,7 @@ I2C1_Write1ByteRegister(temp_sensor_address, device_command_register, measure_co
 
 // Read from the temperature sensor
 temp_raw_1 = I2C1_Read1ByteRegister(temp_sensor_address, temp_register_lower);
-temp_raw_2 = I2C1_Read1ByteRegister(temp_sensor_address, temp_register_upper); 
+temp_raw_2 = I2C1_Read1ByteRegister(temp_sensor_address, temp_register_upper);
 temp_raw = temp_raw_2 << 8 | temp_raw_1;
 temp = (((float) temp_raw)/(65536.0))*165.0 - 40.0;
 ```
@@ -95,7 +95,7 @@ For the communication between the PIC and the ESP32, we used UART. UART is a sim
 We used UART to transmit temperature and humidity readings up to the ESP32, then from the ESP32 to an MQTT server over Wi-Fi. MPLABX has a handy feature that redirects STDIO to UART, so a simple ```printf``` statement handled UART transmission on the PIC side. The ESP32 code was more involved.
 
 ``` python
-# Derived from: 
+# Derived from:
 # * https://github.com/peterhinch/micropython-async/blob/master/v3/as_demos/auart.py
 # * https://github.com/tve/mqboard/blob/master/mqtt_async/hello-world.py
 
@@ -134,7 +134,7 @@ async def receiver():
     hum = 0
     sreader = asyncio.StreamReader(uart)
     while True:
-        res = await sreader.read(1)      
+        res = await sreader.read(1)
         if res==b't': # If you get a temperature reading...
             await client.publish(TOPIC_PUB_TEMP, b, qos=1) #Publish it
             temp = b
@@ -153,14 +153,14 @@ async def receiver():
             b = b''
         elif res==b'w': # If you get a welcome screen command...
             my_oled.print_welcome_screen()
-            b = b''        
+            b = b''
         else:
             b+=res
-            
+
         if MENU == b'1':
             my_oled.print_welcome_screen()
         else:
-            my_oled.print_sensor_data(temp, hum) # Print it    
+            my_oled.print_sensor_data(temp, hum) # Print it
 
 
 def callback(topic, msg, retained, qos):
@@ -172,13 +172,13 @@ def callback(topic, msg, retained, qos):
         uart.write(msg)
         time.sleep(.01)
         msg = 0
-        
+
         # toggle the onboard LED
         led.value(led.value()^1)
 
     # uart.write('\r\n')
     time.sleep(.01)
-  
+
 async def conn_callback(client): await client.subscribe(TOPIC_SUB, 1)
 
 async def main(client):
@@ -195,7 +195,7 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main(client))
 ```
 
-The above code handles the Wi-Fi connection, UART recieve/transmit, and sub/pub to the MQTT server. Code for the OLED display was in another module: 
+The above code handles the Wi-Fi connection, UART recieve/transmit, and sub/pub to the MQTT server. Code for the OLED display was in another module:
 
 ```python
 from machine import Pin, SoftI2C
@@ -220,7 +220,7 @@ def print_welcome_screen():
     oled.text("Welcome!", 32, 54)
     oled.show()
 
-    
+
 def print_data(msg, x):
     print("print_data was called")
     my_string = msg.decode('utf-8') # or my_string = str(msg, 'utf-8')
@@ -235,7 +235,7 @@ def print_data(msg, x):
 def print_sensor_data(temp, hum):
     oled.fill(0)
     oled.text("EGR 314 Team 304", 0, 0)
-    
+
     oled.text("Temp:", 0, 20)
     oled.text(str(temp), 64, 20)
     oled.text("C", 118, 20)
@@ -252,11 +252,11 @@ def plot_data(msg):
     my_strings = my_string.split(" ")
     my_values = [float(item) for item in my_strings]
     max_val = max(my_values)
-    
+
     oled.fill(0)
     oled.text(str(max(my_values)), 64, 0)
     oled.text(str(min(my_values)), 64, 54)
-    
+
     for i in range(len(my_values)-1):
         i+=1
         graphics.line((i-1)*128//(len(my_values)-1), 64-int(64*my_values[i-1]/max_val), i*128//(len(my_values)-1), 64-int(64*my_values[i]/max_val), 1)
