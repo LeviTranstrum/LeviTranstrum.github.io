@@ -10,6 +10,6 @@ title: Levi's Portfolio
 
 ## Passions
 
-| [![Cello](images/cello.png)](cello) | [![Chess](images/chess.png)](chess) | [![Fatherhood](images/baby_thumbnail.png)](fatherhood) |
+| [![Cello](images/cello.png)](cello) | [![Chess](images/board_thumbnail.gif)](chess) | [![Fatherhood](images/baby_thumbnail.png)](fatherhood) |
 |---|---|---|
 |   |   |   |
